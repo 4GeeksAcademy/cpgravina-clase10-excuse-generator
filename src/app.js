@@ -2,25 +2,22 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   //write your code here
   let who = [
     "My colleague",
     "My boss",
     "My supervisor",
-    "A bird",
+    "The client",
     "The English teacher"
   ];
-  let action = ["borrowed", "took", "edited", "changed", "denied"];
+  let action = ["borrowed", "took", "drank", "changed", "tried", "ate"];
   let what = [
     "my meeting notes",
     "my laptop",
     "my coffee",
     "my lunch",
-    "the snacks"
+    "my snacks"
   ];
   let when = [
     "during the meeting",
