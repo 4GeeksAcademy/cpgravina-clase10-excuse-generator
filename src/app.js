@@ -27,11 +27,18 @@ window.onload = function() {
     "outside of my working hours"
   ];
 
-  let randomWho = who[Math.floor(Math.random() * who.length)];
-  let randomAction = action[Math.floor(Math.random() * action.length)];
-  let randomWhat = what[Math.floor(Math.random() * what.length)];
-  let randomWhen = when[Math.floor(Math.random() * when.length)];
+  function getRandomElement(listOfElements) {
+    const element =
+      listOfElements[Math.floor(Math.random() * listOfElements.length)];
+    return element;
+  }
 
   document.getElementById("excuse").innerHTML =
-    randomWho + " " + randomAction + " " + randomWhat + " " + randomWhen;
+    getRandomElement(who) +
+    " " +
+    getRandomElement(action) +
+    " " +
+    getRandomElement(what) +
+    " " +
+    getRandomElement(when);
 };
