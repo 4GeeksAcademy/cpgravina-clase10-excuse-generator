@@ -28,7 +28,7 @@ window.onload = function() {
   ];
 
   function getRandomElement(listOfElements) {
-    const element =
+    let element =
       listOfElements[Math.floor(Math.random() * listOfElements.length)];
     return element;
   }
